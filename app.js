@@ -23,10 +23,8 @@ function generarNumeroSecreto() {
     return asignarTextoElemento("p", "Ya se sortearon todos los numeros posibles, gracias por jugar c:");
   }
   if (numerosSorteados.includes(numeroGenerado)) {
-    console.log("VERDADERO");
     return generarNumeroSecreto();
   } else {
-    console.log("FALSO");
     numerosSorteados.push(numeroGenerado);
     return numeroGenerado;
   }
