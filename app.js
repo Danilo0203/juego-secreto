@@ -19,9 +19,6 @@ condicionesIniciales();
 
 function generarNumeroSecreto() {
   let numeroGenerado = Math.ceil(Math.random() * numeroMaximo);
-  console.log("=============");
-  console.log(numeroGenerado);
-  console.log(numerosSorteados);
   if (numerosSorteados.length === numeroMaximo) {
     return asignarTextoElemento("p", "Ya se sortearon todos los numeros posibles, gracias por jugar c:");
   }
@@ -59,4 +56,3 @@ let verificarIntento = () => {
   }
   intentos++;
 };
-// verificarIntento();
